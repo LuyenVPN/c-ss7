@@ -7,17 +7,15 @@ int main(){
 	int a[n];
 	
 	for(int i=0 ; i < n ; i++){
-		while (1){
-		printf("nhap phan tu %d la so le : ", i+1);
+		printf("nhap phan tu %d la : ", i+1);
 	    scanf("%d", &a[i]); 
 		if (a[i]%2 !=0){
-			break; 
+			a[i]+=2; 
     	  }else {
-    	  	printf("khong phai so le nhap lai \n");
+    	   a[i]+=3; 
 		  }  
       }
-    }
-	printf("cac phan tu la so le la: ");
+	printf("cac phan tu la: ");
 	for(int i=0 ; i < n ; i++){
 		printf("%d ", a[i]);
 	}
